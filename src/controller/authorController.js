@@ -65,7 +65,7 @@ const login = async function  (req, res) {
         }, "Project 1");
         res.setHeader("x-api-key", token);
        // res.status(200).send({ status: true, data: "logged in successfully" })
-        res.status(200).send({ status: true, data: {token:token })
+        res.status(200).send({ status: true, data: {token:token }})
     }
     catch (err) {
         res.status(500).send({ status: false, msg: err.message })
